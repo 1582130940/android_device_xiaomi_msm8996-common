@@ -507,3 +507,12 @@ on property:init.svc.surfaceflinger=restarting
 
 on property:slpi.restart=1
     write /sys/kernel/debug/msm_subsys/slpi restart
+
+on property:gsm.version.baseband=*
+    start set_baseband
+
+service set_baseband /vendor/bin/init.baseband.sh
+    class late_start
+    user system
+    group system
+    oneshot

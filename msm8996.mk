@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
+    init.baseband.sh \
     init.qcom.sh \
     init.qcom.power.rc \
     init.qcom.usb.rc \
